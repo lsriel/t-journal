@@ -1,4 +1,56 @@
-TTGO-Camera-Series
+# Premier Pas
+- [Installation de Arduino IDE - Outil pour mettre des programmes sur le board](http://electroniqueamateur.blogspot.com/2019/07/programmer-lesp32-avec-lide-arduino.html)
+- [Telechage the ZIP du programe Camera](https://github.com/lsriel/t-journal/archive/master.zip)
+- [Consulte la page de documentation do programme](https://github.com/lsriel/t-journal)
+- Dans le dossier ou tu a dézippé le [Programe Camera](https://github.com/lsriel/t-journal/archive/master.zip), double click sur t-journal.ino.
+- Regarde le code, pour le fun
+- Plug ton bloard et clique sur ![upload](image/arduino-upload.png) 
+- Modifie le fichier t-journal.ino avec le programe Arduino IDE, à la ligne #456
+
+Original:
+```cpp
+    Serial.print("Camera Ready! Use 'http://");
+    Serial.print(ip);
+    Serial.println("' to connect");
+```
+
+Change ça pour:
+```cpp
+    Serial.print("LaCam de J @ 'http://");
+    Serial.print(ip);
+    Serial.println("' pour connecter");
+```
+- Plug ton bloard et clique sur [upload](image/arduino-upload.png) Pis  regarde le petit écran
+- Modifie le programe pour que le réseau wifi ait un nom différent à la ligne no 429
+Original:
+```cpp
+    sprintf(buff, "TTGO-CAMERA-%02X:%02X", mac[4], mac[5]);
+    WiFi.softAP(buff);
+```
+Change ça pour:
+```cpp
+    sprintf(buff, "La-Cam-a-J-%02X:%02X", mac[4], mac[5]);
+    WiFi.softAP(buff,"unmotdepasseassezlong");
+```
+- Plug ton bloard et clique sur ![upload](image/arduino-upload.png) pis connect toi sur ton nouveau reseau wifi
+
+
+## Bonus
+Si la programation t'interesse, tu dois apprendre ces choses la après que tu finis les premiers pas, tu a reseussi a faire tout marcher et que tu veux aller plus loin.
+- [Écoute ça](https://www.youtube.com/watch?v=KgeQOUGoYb8)
+- [Cree toi un compte sur github.com](https://github.com)
+- [Install le programme git](https://git-scm.com/download/win)
+- [Check des videos youtubes](https://www.youtube.com/watch?v=4o9qzbssfII)
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Le reste de la page vient du vendeur du board et est en anglais
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
+
+# TTGO-Camera-Series
 =====================
 
 ![pic](image/1.png)
