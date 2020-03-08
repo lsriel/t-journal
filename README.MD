@@ -21,7 +21,7 @@ Change ça pour:
     Serial.println("' pour connecter");
 ```
 - Plug ton bloard et clique sur [upload](image/arduino-upload.png) Pis  regarde le petit écran
-- Modifie le programe pour que le réseau wifi ait un nom différent à la ligne no 429
+- Modifie le programe pour que le réseau wifi ait un nom différent et un mot de passe, en changeant la ligne no 429
 Original:
 ```cpp
     sprintf(buff, "TTGO-CAMERA-%02X:%02X", mac[4], mac[5]);
